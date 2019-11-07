@@ -1,17 +1,23 @@
-/* eslint-disable func-names */
-/* eslint-disable no-use-before-define */
-/* eslint-disable no-console */
-/* eslint-disable default-case */
+const dotenv = require('dotenv');
+const createServer = require('./frameworks/webserver/index');
 
-const gridSize = { x: 5, y: 5 };
+const result = dotenv.config();
 
-const convertStringToArray = require('./interfaces/helpers/convertArray');
-const loopArray = require('./application/RunMovements');
+if (result.error) {
+  throw result.error;
+}
 
-const movementInput = 'LMLMLMLMM';
+const start = async () => {
+  await createServer(process.env.INFRASTRUCTURE_WEBSERVER_PORT);
+};
 
-const inputMovementList = convertStringToArray(movementInput);
+start();
 
-console.log(loopArray(inputMovementList, gridSize));
+// const gridSize = { x: 5, y: 5 };
+// const movementInput = 'LMLMLMLMM';
+
+// const inputMovementList = convertStringToArray(movementInput);
+
+// console.log(loopArray(inputMovementList, gridSize));
 
 // eslint-disable-next-line consistent-return

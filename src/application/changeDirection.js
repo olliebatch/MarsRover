@@ -1,3 +1,5 @@
+/* eslint-disable default-case */
+// eslint-disable-next-line consistent-return
 function changeDirection(directionFacing, directionChange) {
   switch (directionFacing) {
     case 'W':

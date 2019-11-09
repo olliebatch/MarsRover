@@ -28,13 +28,13 @@ const convertStringToArray = require('./helpers/convertArray');
 
 function loopArray(roverInfo, gridSize) {
   const output = [];
-  roverInfo.forEach(function(post) {
-    const x = new Rover(post);
-    const movement = x.movement();
-    const formattedMovement = convertStringToArray(movement);
-    const format = x.roverFormattedObject();
-    const outputRover = runRover(formattedMovement, format, gridSize);
-    output.push(outputRover);
+  roverInfo.forEach(async function(post) {
+    const x = await new Rover(post);
+    const movement = await x.movement();
+    const formattedMovement = await convertStringToArray(movement);
+    const format = await x.roverFormattedObject();
+    const outputRover = await runRover(formattedMovement, format, gridSize);
+    await output.push(outputRover);
   });
   return output;
 }

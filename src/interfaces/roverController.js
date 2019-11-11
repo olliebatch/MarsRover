@@ -11,7 +11,7 @@ function roverController(roverInfo, gridSize) {
     const formattedMovement = convertStringToArray(movement);
     const roverPosition = x.roverFormattedObject();
     validateRequest(roverPosition);
-    const outputRover = runRover(formattedMovement, roverPosition, gridSize);
+    const outputRover = runRover(formattedMovement, roverPosition, gridSize, output);
     output.push(outputRover);
   });
   return output;

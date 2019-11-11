@@ -12,12 +12,3 @@ const start = async () => {
 };
 
 start();
-
-// const gridSize = { x: 5, y: 5 };
-// const movementInput = 'LMLMLMLMM';
-
-// const inputMovementList = convertStringToArray(movementInput);
-
-// console.log(loopArray(inputMovementList, gridSize));
-
-// eslint-disable-next-line consistent-return

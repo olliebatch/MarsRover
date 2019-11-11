@@ -10,4 +10,12 @@ function validateRequest(roverPosition) {
   }
 }
 
-module.exports = validateRequest;
+function validateGrid(gridSize) {
+  if (gridSize.x < 0 || gridSize.y < 0) {
+    throw new Error('Value cant be less than 0');
+  } else {
+    return null;
+  }
+}
+
+module.exports = { validateRequest, validateGrid };

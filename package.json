@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "dev": "nodemon --inspect",
-    "test": "jest",
+    "test": "jest --coverage",
     "lint": "eslint src -c .eslintrc --ext js,ts",
     "start": "node src/main.js"
   },

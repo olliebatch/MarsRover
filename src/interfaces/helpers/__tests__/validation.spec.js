@@ -42,4 +42,10 @@ describe('Testing Validation validate Grid function', () => {
       validation.validateGrid(gridSize);
     }).toThrow();
   });
+  it('Test to ensure that errors if it isnt a number', async () => {
+    const gridSize = { x: "5", y: "5" };
+    expect(() => {
+      validation.validateGrid(gridSize);
+    }).toThrow();
+  });
 });

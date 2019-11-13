@@ -18,5 +18,5 @@ describe('Testing of the movement loops', () => {
       yGrid: 3,
       direction: 'N',
     });
-  });
+});
 });

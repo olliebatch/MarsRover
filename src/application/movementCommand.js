@@ -8,7 +8,10 @@ function movementCommand(directionFacing, input) {
     roverOutput.yGrid -= 1;
   } else if (directionFacing === 'N') {
     roverOutput.yGrid += 1;
+  } else {
+    throw new Error('Unrecognised Move Command');
   }
+
   return roverOutput;
 }
 

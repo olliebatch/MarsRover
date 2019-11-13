@@ -12,7 +12,7 @@ class Rover {
   }
 
   roverFormattedObject() {
-    return { xGrid: this.xGrid, yGrid: this.yGrid, direction: this.direction };
+    return { roverNo: this.roverNo, xGrid: this.xGrid, yGrid: this.yGrid, direction: this.direction };
   }
 }
 

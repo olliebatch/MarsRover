@@ -1,14 +1,16 @@
 const moveAndDirect = require('../moveandDirectionController');
 
-describe('Testing of Class - Creation of Rover', () => {
+describe('Testing of Movements and Directions', () => {
   it('Test outputs if a Move command is sent', async () => {
     const RoverInputRequest = {
+      roverNo: 1,
       xGrid: 1,
       yGrid: 2,
       direction: 'N',
     };
     const x = moveAndDirect('M', RoverInputRequest);
     expect(x).toStrictEqual({
+      roverNo: 1,
       xGrid: 1,
       yGrid: 3,
       direction: 'N',
@@ -16,12 +18,14 @@ describe('Testing of Class - Creation of Rover', () => {
   });
   it('Test to ensure that the direction can change', async () => {
     const RoverInputRequest = {
+      roverNo: 1,
       xGrid: 1,
       yGrid: 2,
       direction: 'N',
     };
     const x = moveAndDirect('L', RoverInputRequest);
     expect(x).toStrictEqual({
+      roverNo: 1,
       xGrid: 1,
       yGrid: 2,
       direction: 'W',

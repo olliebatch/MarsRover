@@ -7,8 +7,12 @@ function loopArray(movements, roverPosition, gridSize, output) {
   // eslint-disable-next-line func-names
   movements.forEach(function(post) {
     testInput = moveandDirectController(post, testInput);
-    checkRoverPosition(output, testInput);
-    validateGridPosition(testInput, gridSize);
+    try {
+      checkRoverPosition(output, testInput);
+      validateGridPosition(testInput, gridSize);
+    } catch (error) {
+      return error;
+    }
   });
   return testInput;
 }

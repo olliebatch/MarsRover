@@ -24,6 +24,6 @@ describe('Testing of Class - Creation of Rover', () => {
   it('Test to ensure that the Rover moves when facing East', async () => {
     const rover = new Rover(RoverInputRequest);
     const roverFormatObject = rover.roverFormattedObject();
-    expect(roverFormatObject).toStrictEqual({ xGrid: 1, yGrid: 2, direction: 'N' });
+    expect(roverFormatObject).toStrictEqual({ roverNo: 1, xGrid: 1, yGrid: 2, direction: 'N' });
   });
 });

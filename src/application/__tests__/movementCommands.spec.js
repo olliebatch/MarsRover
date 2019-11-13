@@ -17,4 +17,10 @@ describe('Testing movement of Rover command', () => {
     const input = { xGrid: 1, yGrid: 1, direction: 'N' };
     expect(movementCommand('S', input)).toStrictEqual({ xGrid: 1, yGrid: 0, direction: 'N' });
   });
+  it('Test to ensure that the Rover errors with an unknown command', async () => {
+    const input = { xGrid: 1, yGrid: 1, direction: 'N' };
+    expect(() => {
+      movementCommand('B', input);
+    }).toThrow();
+  });
 });

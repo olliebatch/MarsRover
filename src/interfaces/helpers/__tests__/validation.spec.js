@@ -49,3 +49,12 @@ describe('Testing Validation validate Grid function', () => {
     }).toThrow();
   });
 });
+
+describe('Testing Validation of Movement Commands', () => {
+  it('Testing Validation of Movement Commands if not L,M,R', async () => {
+    const x = 'T'
+    expect(() => {
+      validation.validateMovement(x);
+    }).toThrow();
+  });
+});

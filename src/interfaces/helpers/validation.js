@@ -20,4 +20,17 @@ function validateGrid(gridSize) {
   }
 }
 
-module.exports = { validateRequest, validateGrid };
+function validateMovement(movement) {
+  if (movement === 'L') {
+    return null;
+  }
+  if (movement === 'R') {
+    return null;
+  }
+  if (movement === 'M') {
+    return null;
+  }
+  throw new Error('Movement Command is not recognised');
+}
+
+module.exports = { validateRequest, validateGrid, validateMovement };

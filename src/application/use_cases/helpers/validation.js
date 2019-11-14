@@ -12,7 +12,7 @@ function validateRequest(roverPosition) {
 
 function validateGrid(gridSize) {
   if (gridSize.x <= 0 || gridSize.y <= 0) {
-    throw new Error('Value cant be less than 0');
+    throw new Error('Grid Size Value cant be less than 0');
   } else if (typeof gridSize.x !== 'number' || typeof gridSize.y !== 'number') {
     throw new Error('GridSize is not a number');
   } else {

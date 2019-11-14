@@ -2,7 +2,7 @@ const movementLoops = require('../RunMovements');
 
 describe('Testing of the movement loops', () => {
   it('Test output of movement loop', async () => {
-    const movements = ['L','M','L','M','L','M','L','M','M'];
+    const movements = ['L', 'M', 'L', 'M', 'L', 'M', 'L', 'M', 'M'];
     const roverPosition = {
       roverNo: 1,
       xGrid: 1,
@@ -18,5 +18,5 @@ describe('Testing of the movement loops', () => {
       yGrid: 3,
       direction: 'N',
     });
-});
+  });
 });

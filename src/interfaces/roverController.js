@@ -1,8 +1,8 @@
 /* eslint-disable func-names */
-const Rover = require('../application/createRover');
-const runRover = require('../application/RunMovements');
+const Rover = require('./createRover');
+const runRover = require('../application/use_cases/RunMovements');
 const convertStringToArray = require('./helpers/convertArray');
-const validation = require('./helpers/validation');
+const validation = require('../application/use_cases/helpers/validation');
 
 async function roverController(roverInfo, gridSize) {
   const output = [];

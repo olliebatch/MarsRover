@@ -1,9 +1,9 @@
 const moveandDirectController = require('./moveandDirectionController');
-const validateGridPosition = require('./validateGridPosition');
-const checkRoverPosition = require('../interfaces/helpers/checkRoverpos');
-const validation = require('../interfaces/helpers/validation');
+const validateGridPosition = require('./helpers/validateGridPosition');
+const checkRoverPosition = require('./helpers/checkRoverpos');
+const validation = require('./helpers/validation');
 
-function loopArray(movements, roverPosition, gridSize, output) {
+function runRover(movements, roverPosition, gridSize, output) {
   let testInput = roverPosition;
   // eslint-disable-next-line func-names
   movements.forEach(function(post) {
@@ -15,4 +15,4 @@ function loopArray(movements, roverPosition, gridSize, output) {
   return testInput;
 }
 
-module.exports = loopArray;
+module.exports = runRover;

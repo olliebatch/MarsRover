@@ -9,7 +9,7 @@ function movementCommand(directionFacing, input) {
   } else if (directionFacing === 'N') {
     roverOutput.yGrid += 1;
   } else {
-    throw new Error('Unrecognised Move Command');
+    throw new Error('Unrecognised direction facing');
   }
 
   return roverOutput;

@@ -43,7 +43,7 @@ describe('Testing Validation validate Grid function', () => {
     }).toThrow();
   });
   it('Test to ensure that errors if it isnt a number', async () => {
-    const gridSize = { x: "5", y: "5" };
+    const gridSize = { x: '5', y: '5' };
     expect(() => {
       validation.validateGrid(gridSize);
     }).toThrow();
@@ -52,7 +52,7 @@ describe('Testing Validation validate Grid function', () => {
 
 describe('Testing Validation of Movement Commands', () => {
   it('Testing Validation of Movement Commands if not L,M,R', async () => {
-    const x = 'T'
+    const x = 'T';
     expect(() => {
       validation.validateMovement(x);
     }).toThrow();

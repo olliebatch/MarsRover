@@ -37,19 +37,14 @@ To run the tests in watch mode:
 npm test -- --watch
 ```
 
-### Break down into end to end tests
-
-TODO
-
 ### Coding style
 
-Node-starter uses:
+Mars-Rover uses:
 
 - [Eslint](https://eslint.org/)
 - [Prettier](https://github.com/prettier/prettier)
 
-to ensure code style cohesion throughout the project. The styleguide that used is [AirBnB](https://github.com/airbnb/javascript)'s. All the AirBnB rules can ve found [here](https://github.com/airbnb/javascript).
-
+to ensure code style cohesion throughout the project.
 ### Git Hooks
 
 Git Hooks are triggered by [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged) on:
@@ -58,17 +53,9 @@ Git Hooks are triggered by [Husky](https://github.com/typicode/husky) and [lint-
 
 **prepush**: will run the tests before pushing
 
-## <a name="deployment"></a>Deployment
-
-TODO CI/CD
-
-## Contributing
-
-TODO
-
 ## Authors
 
-* **Xavier Fuentes** - *Initial work* - [XaviFuentes](https://github.com/xavierfuentes)
+* **Ollie Batchelor** - *Initial work* - [olliebatch](https://github.com/olliebatch)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 

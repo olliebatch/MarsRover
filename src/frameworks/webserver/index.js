@@ -11,13 +11,12 @@ const createServer = async port => {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Headers', '*');
     if (req.method === 'OPTIONS') {
-      res.header('Accces-Control-Allow-Methods', 'PUT', 'POST', 'PATCH', 'DELETE', 'GET');
+      res.header('Accces-Control-Allow-Methods', 'POST');
       return res.status(200).json({});
     }
     return next();
   });
 
-  app.post('/rovers', requestHandler.webRequestHandler);
   app.post('/rovers/:x/:y', requestHandler.webRequestHandler);
 
   app.use((req, res, next) => {

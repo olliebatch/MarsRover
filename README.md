@@ -13,6 +13,7 @@ You'll need [Docker](https://www.docker.com/products/docker-desktop) installed
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
+An ENV file containing : INFRASTRUCTURE_WEBSERVER_PORT is required.
 
 Orchestrate the dev env
 
@@ -21,6 +22,34 @@ docker-compose up --build
 ```
 
 That's it! The webserver is listening on [http://localhost:5000](http://localhost:5000)
+
+### API Request Details
+
+Body of the request should contain the variables below. 
+I suggest you use tools such as postman to run manual commands for this api.
+
+Endpoint : http://localhost:5500/rovers/x/y
+
+Change the x and y to set your gridSize.
+
+Example Body Request: 
+[{	"roverNo": "1",
+	"xGrid": 1,
+	"yGrid":2,
+	"direction":"N",
+	"movements":"LMLMLMLMM"
+},{	"roverNo": "2",
+	"xGrid": 3,
+	"yGrid":3,
+	"direction":"E",
+	"movements":"MMRMMRMRRM"
+},{	"roverNo": "3",
+	"xGrid": 1,
+	"yGrid":2,
+	"direction":"N",
+	"movements":"LMLMLMLMM"
+}]
+
 
 ## Running the tests
 

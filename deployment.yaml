@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: marsRover
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: marsRover
+  template:
+    metadata:
+      labels:
+        name: marsRover
+    spec:
+      containers:
+      - name: marsRover
+        image: olliebatch/marsrover
+        resources:
+          requests:
+            cpu: 50m
+            memory: 300Mi
+          limits:
+            cpu: 200m
+            memory: 1000Mi
+        env:
+        - name: SESSION_REDIS
+          value: "true"
+        ports:
+        - containerPort: 5000

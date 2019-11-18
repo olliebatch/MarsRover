@@ -26,7 +26,7 @@ That's it! The webserver is listening on [http://localhost:5000](http://localhos
 ### API Request Details
 
 Body of the request should contain the variables below. 
-I suggest you use tools such as postman to run manual commands for this api.
+I suggest you use tools such as [postman](https://www.getpostman.com/) to run manual commands for this api.
 
 Endpoint : http://localhost:5500/rovers/x/y
 
@@ -56,6 +56,8 @@ Example Body Request:
 
 Testing is done using Jest
 
+This code currently has 100% code coverage so all functions are tested.
+
 Run the tests with:
 
 ```
@@ -66,6 +68,10 @@ To run the tests in watch mode:
 ```
 npm test -- --watch
 ```
+
+### CI/CD
+This repo currently uses GitHub actions to run continous integration and also uses github actions for continous deployment. 
+It continously deploys into google cloud and uses [kubernetes](https://kubernetes.io/) to host it. It uses [kustomize](https://kustomize.io/) to put all the yaml into one file.
 
 ### Coding style
 

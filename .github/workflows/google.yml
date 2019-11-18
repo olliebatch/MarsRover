@@ -8,7 +8,7 @@
 #
 # 3. Change the values for the GKE_ZONE, GKE_CLUSTER and IMAGE environment variables (below).
 
-name: Run testing on Node and then Build and Deploy to GKE
+name: Build and Deploy to GKE
 
 on:
   push:
@@ -25,7 +25,6 @@ env:
   IMAGE: olliebatch/marsrover
 
 jobs:
-build:
   setup-build-publish-deploy:
     name: Setup, Build, Publish, and Deploy
     runs-on: ubuntu-latest

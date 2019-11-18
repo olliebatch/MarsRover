@@ -33,6 +33,7 @@ Endpoint : http://localhost:5500/rovers/x/y
 Change the x and y to set your gridSize.
 
 Example Body Request: 
+```
 [{	"roverNo": "1",
 	"xGrid": 1,
 	"yGrid":2,
@@ -49,7 +50,7 @@ Example Body Request:
 	"direction":"N",
 	"movements":"LMLMLMLMM"
 }]
-
+```
 
 ## Running the tests
 

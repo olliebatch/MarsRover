@@ -22,7 +22,7 @@ env:
   GITHUB_SHA: ${{ github.sha }}
   GKE_ZONE: europe-west1-b
   GKE_CLUSTER: ollie-marsrover
-  IMAGE: olliebatch/marsrover:0.0.1
+  IMAGE: olliebatch/marsrover
 
 jobs:
   setup-build-publish-deploy:

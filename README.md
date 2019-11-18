@@ -75,7 +75,8 @@ Mars-Rover uses:
 - [Prettier](https://github.com/prettier/prettier)
 
 to ensure code style cohesion throughout the project.
-### Git Hooks
+
+### Git Hooks
 
 Git Hooks are triggered by [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged) on:
 

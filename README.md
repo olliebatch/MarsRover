@@ -4,7 +4,7 @@ Mars-Rover written in Node [NodeJS](https://nodejs.org/en/)
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](deployment) for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
 ### Prerequisites
 
@@ -13,7 +13,8 @@ You'll need [Docker](https://www.docker.com/products/docker-desktop) installed
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
-An ENV file containing : INFRASTRUCTURE_WEBSERVER_PORT is required.
+An ENV file containing : 
+INFRASTRUCTURE_WEBSERVER_PORT - I suggest using port 5000 is required.
 
 Orchestrate the dev env
 
@@ -28,7 +29,7 @@ That's it! The webserver is listening on [http://localhost:5000](http://localhos
 Body of the request should contain the variables below. 
 I suggest you use tools such as [postman](https://www.getpostman.com/) to run manual commands for this api.
 
-Endpoint : http://localhost:5500/rovers/x/y
+Endpoint : http://localhost:5000/rovers/x/y
 
 Change the x and y to set your gridSize.
 

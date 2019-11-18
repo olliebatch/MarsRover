@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: marsrover
-        image: olliebatch/marsrover
+        image: olliebatch/marsrover:0.0.1
         resources:
           requests:
             cpu: 50m

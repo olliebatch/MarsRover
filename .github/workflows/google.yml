@@ -49,9 +49,6 @@ build:
     - name: npm test
       run: npm test
 
-      env:
-        CI: true
-
   setup-build-publish-deploy:
     name: Setup, Build, Publish, and Deploy
     runs-on: ubuntu-latest

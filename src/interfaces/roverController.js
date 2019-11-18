@@ -7,10 +7,10 @@ const validation = require('../application/use_cases/helpers/validation');
 async function roverController(roverInfo, gridSize) {
   const output = [];
   roverInfo.forEach(async function(post) {
-    const x = new Rover(post);
-    const movement = x.movement();
+    const rover = new Rover(post);
+    const movement = rover.movement();
     const formattedMovement = convertStringToArray(movement);
-    const roverPosition = x.roverFormattedObject();
+    const roverPosition = rover.roverFormattedObject();
     let outputRover = {};
     try {
       validation.validateGrid(gridSize);

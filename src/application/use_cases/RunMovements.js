@@ -14,5 +14,4 @@ function runRover(movements, roverPosition, gridSize, output) {
   });
   return testInput;
 }
-
 module.exports = runRover;

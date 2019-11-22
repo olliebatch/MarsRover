@@ -1,4 +1,4 @@
-const movementLoops = require('../RunMovements');
+const movementLoops = require('../runMovements');
 
 describe('Testing of the movement loops', () => {
   it('Test output of movement loop', async () => {

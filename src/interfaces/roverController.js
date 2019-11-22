@@ -1,6 +1,6 @@
 /* eslint-disable func-names */
 const Rover = require('./createRover');
-const runRover = require('../application/use_cases/RunMovements');
+const runRover = require('../application/use_cases/runMovements');
 const convertStringToArray = require('./helpers/convertArray');
 const validation = require('../application/use_cases/helpers/validation');
 
